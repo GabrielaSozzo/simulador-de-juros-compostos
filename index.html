@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Calculadora de Juros Compostos</title>
+  </head>
+  <body>
+    <main id="container">
+      <div id="calculator">
+        <h2>Simulador de Juros Compostos</h2>
+
+        <div id="input_box">
+          <div class="input-field">
+            <label for="value">Valor inicial</label>
+            <div class="input-wrapper">
+              <span class="currency-symbol">R$</span>
+              <input type="number" placeholder="0.00" step="0.01" id="value" />
+            </div>
+          </div>
+
+          <div class="input-field">
+            <label for="fee">Taxa de juros mensal</label>
+            <div class="input-wrapper">
+              <span class="currency-symbol">%</span>
+              <input type="number" placeholder="0.00" step="0.01" id="fee" />
+            </div>
+          </div>
+
+          <div class="input-field">
+            <label for="time">Período em meses</label>
+            <div class="input-wrapper">
+              <input type="number" id="time" />
+            </div>
+          </div>
+        </div>
+
+        <div id="result">
+          <h4>Resultado:</h4>
+          <span id="total"> R$ 0,00 </span>
+        </div>
+
+        <button id="calculate">Calcular</button>
+      </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
