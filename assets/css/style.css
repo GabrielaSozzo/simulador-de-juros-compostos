@@ -24,7 +24,10 @@
 
 #calculator {
   background-color: rgb(240, 240, 240);
-  padding: 40px;
+  /* padding: 40px; */
+  padding: clamp(20px, 5vw, 40px);
+  width: 90%;
+  max-width: 400px;
   border-radius: 8px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
   display: flex;
@@ -38,6 +41,7 @@
   line-height: 1.75rem;
   font-weight: 700;
   color: #9c1006;
+  text-align: center;
 }
 
 #imput_box {
@@ -125,4 +129,36 @@
   background-color: #dee2e6;
   color: #9c1006;
   transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+  #calculator {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: none;
+  }
+
+  #container {
+    padding: 10px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #calculator h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .input-field input {
+    font-size: 16px;
+  }
+
+  #calculate {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  #total {
+    font-size: 20px;
+  }
 }
